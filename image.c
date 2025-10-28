@@ -4,11 +4,12 @@
 
 
 
-void swap(int *a, int *b) {
-    *a += *b;
-    *b = *a - *b;
-    *a -= *b;
+void swap_numbers(int *first_num, int *second_num) {
+    *first_num += *second_num;
+    *second_num = *first_num - *second_num;
+    *first_num -= *second_num;
 }
+
 
 void reverseArray(int *array,int size) {
     for(int index = 0; index < size/2; index++) {
